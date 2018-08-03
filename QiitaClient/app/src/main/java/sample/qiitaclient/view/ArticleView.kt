@@ -26,17 +26,23 @@ class ArticleView : FrameLayout {
                 defStyleAttr: Int,
                 defStyleRes: Int) : super(context, attrs, defStyleAttr, defStyleRes)
 
-    val profileImageView:ImageView by lazy{
-        findViewById(R.id.profile_image_view) as ImageView
-    }
+    val profileImageView:ImageView by bindView(R.id.profile_image_view)
 
-    val titleTextView: TextView by lazy {
-        findViewById(R.id.title_text_view) as TextView
-    }
+    val titleTextView: TextView by bindView(R.id.title_text_view)
 
-    val usernameTextView: TextView by lazy {
-        findViewById(R.id.user_name_text_view) as TextView
-    }
+    val userNameTextView: TextView by bindView(R.id.user_name_text_view)
+
+//    val profileImageView:ImageView by lazy{
+//        findViewById(R.id.profile_image_view) as ImageView
+//    }
+//
+//    val titleTextView: TextView by lazy {
+//        findViewById(R.id.title_text_view) as TextView
+//    }
+//
+//    val userNameTextView: TextView by lazy {
+//        findViewById(R.id.user_name_text_view) as TextView
+//    }
 
     init {
         LayoutInflater.from(context).inflate(R.layout.view_article, this)
@@ -47,7 +53,7 @@ class ArticleView : FrameLayout {
 
     fun setArticle(article: Article){
         titleTextView.text = article.title
-        usernameTextView.text = article.user.name
+        userNameTextView.text = article.user.name
 
         //TODOプロフィール画像をセットする
         profileImageView.setBackgroundColor(Color.RED)
