@@ -1,12 +1,15 @@
-//P254まで
+//P262まで
 
 package tk.httpcarabineer.qiitaclient
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DialogTitle
+import android.webkit.WebView
 import android.widget.ListView
+import sample.qiitaclient.view.ArticleActivity
 import sample.qiitaclient.view.ArticleListAdapter
+import sample.qiitaclient.view.ArticleView
 import tk.httpcarabineer.qiitaclient.Article
 import tk.httpcarabineer.qiitaclient.User
 
@@ -24,6 +27,10 @@ class MainActivity : AppCompatActivity() {
 
         val listView: ListView = findViewById(R.id.list_view) as ListView
         listView.adapter = listAdapter
+        listView.setOnItemClickListener { adapterView, view, position, id ->
+            val article = listAdapter.articles[position]
+            ArticleActivity.intent(this, article).let { startActivity(it) }
+        }
     }
 
     //ダミー記事を生成するメソッド
@@ -32,45 +39,5 @@ class MainActivity : AppCompatActivity() {
                     title = title,
                     url = "https://kotlinlang.org/",
                     user = User(id = "", name = userName, profileImageUrl = ""))
-
-//        //ArticleViewオブジェクトを生成
-//        val articleView = ArticleView(applicationContext)
-//
-//        //Articleオブジェクトを生成して、ArticleViewオブジェクトにセット
-//        articleView.setArticle(Article(id="123",
-//                title = "Kotlin入門",
-//                url = "http://www.example.com/articles/123",
-//                user = User(id="456",name="たろう",profileImageUrl = "")))
-//
-//        //このアクテビティにArticleViewオブジェクトをセット
-//        setContentView(articleView)
-
 }
-
-//package tk.httpcarabineer.qiitaclient
-//
-//import android.support.v7.app.AppCompatActivity
-//import android.os.Bundle
-//import sample.qiitaclient.view.ArticleView
-//
-//class MainActivity : AppCompatActivity() {
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-////        super.onCreate(savedInstanceState)
-////        setContentView(R.layout.view_article)
-//        super.onCreate(savedInstanceState)
-//
-//        //ArticleViewオブジェクトを生成
-//        val articleView = ArticleView(applicationContext)
-//
-//        //Articleオブジェクトを生成して、ArticleViewオブジェクトにセット
-//        articleView.setArticle(Article(id="123",
-//                title = "Kotlin入門",
-//                url = "http://www.example.com/articles/123",
-//                user = User(id="456",name="たろう",profileImageUrl = "")))
-//
-//        //このアクテビティにArticleViewオブジェクトをセット
-//        setContentView(articleView)
-//    }
-//}
 
