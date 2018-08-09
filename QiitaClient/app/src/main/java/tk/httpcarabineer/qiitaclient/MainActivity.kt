@@ -1,4 +1,4 @@
-//P273途中まで
+//P275まで
 
 package tk.httpcarabineer.qiitaclient
 
@@ -16,12 +16,16 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import rx.Scheduler
 import rx.android.schedulers.AndroidSchedulers
+
 import sample.qiitaclient.client.ArticleClient
 import sample.qiitaclient.view.ArticleActivity
 import sample.qiitaclient.view.ArticleListAdapter
 import sample.qiitaclient.view.ArticleView
 import tk.httpcarabineer.qiitaclient.Article
 import tk.httpcarabineer.qiitaclient.User
+
+import sample.qiitaclient.view.toast
+import rx.schedulers.Schedulers
 
 class MainActivity : AppCompatActivity() {
 
