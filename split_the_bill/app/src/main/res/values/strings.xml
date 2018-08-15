@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">split_the_bill</string>
+    <string name="tv_goukei_label">合計金額</string>
+    <string name="tv_ninnzuu_label">人数</string>
+    <string name="tv_kekka_disp">一人いくらか、割り勘計算！</string>
+    <string name="b_keisann">計算ボタン</string>
+    <string name="et_goukei_error">合計金額を入力してください</string>
+    <string name="et_ninnzuu_error">人数を入力してください</string>
+    <string name="set_kekka">%1$,3d円です</string>
+</resources>

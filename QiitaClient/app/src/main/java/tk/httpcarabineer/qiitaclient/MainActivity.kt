@@ -18,7 +18,6 @@ import com.trello.rxlifecycle.kotlin.bindToLifecycle
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import rx.Scheduler
 import rx.android.schedulers.AndroidSchedulers
 
 import sample.qiitaclient.client.ArticleClient
