@@ -1,10 +1,10 @@
 package tk.httpcarabineer.split_the_bill
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val button = findViewById<Button>(R.id.b_keisann)
+
         button.setOnClickListener {
-            //ここに計算ボタンがタップされた時の処理を書く
 
             //未入力判定用のフラグ
             var isValid = true
@@ -42,12 +42,49 @@ class MainActivity : AppCompatActivity() {
                 isValid = false
             }
 
+            //"0"だと除算できずにアプリが落ちるので...
+            if(st_ninnzuu == "0") {
+                //人数が"0"の場合
+                get_ninnzuu.error = getString(R.string.et_ninnzuu_error)
+                isValid = false
+            }
+
+
+
+            //調整金額欄の値を取得
+            val get_tyousei = findViewById<EditText>(R.id.et_tyousei)
+            var st_tyousei = get_tyousei.text.toString()
+
+            //金額調整欄が空欄になっていた場合は"0"として扱う
+            if(st_tyousei.isEmpty()){
+                st_tyousei = "0"
+            }
+
 
             //合計金額入力欄、人数入力欄に値が入っている場合
             if(isValid) {
-                //合計金額入力欄、人数入力欄の値を文字列型から整数型に変換
+                //合計金額入力欄、人数入力欄, 金額調整欄の値を文字列型から整数型に変換
                 val goukei = Integer.parseInt(st_goukei)
                 val ninnzuu = Integer.parseInt(st_ninnzuu)
+                val tyousei = Integer.parseInt(st_tyousei)
+
+                //ResultActivityに合計金額と人数、調整金額の値を引き継ぎ
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra("goukei", goukei)
+                intent.putExtra("ninnzuu", ninnzuu)
+                intent.putExtra("tyousei", tyousei)
+
+                //合計金額、人数、調整金額のEditTextを初期化
+                get_goukei.text.clear()
+                get_ninnzuu.text.clear()
+                get_tyousei.text.clear()
+
+                //ResultActivityの呼び出し
+                startActivity(intent)
+
+
+                //コメントアウト（前回作成）
+                /*
 
                 //計算
                 val kekka = goukei / ninnzuu
@@ -55,6 +92,9 @@ class MainActivity : AppCompatActivity() {
                 //1人分の金額表示欄を取得して、計算結果を表示
                 val set_kekka = findViewById<TextView>(R.id.tv_kekka_disp)
                 set_kekka.text = getString(R.string.set_kekka, kekka)
+                */
+                //コメントアウト（前回作成）ここまで
+
             }
         }
     }

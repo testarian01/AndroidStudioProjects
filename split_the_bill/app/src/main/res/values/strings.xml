@@ -7,4 +7,12 @@
     <string name="et_goukei_error">合計金額を入力してください</string>
     <string name="et_ninnzuu_error">人数を入力してください</string>
     <string name="set_kekka">%1$,3d円です</string>
+    <string name="split_the_bill">split the bill</string>
+    <string name="tv_tyousei">調整金額</string>
+    <string name="tv_kekka1_disp">計算結果 1人分の価格</string>
+    <string name="tv_kekka2_disp">計算結果 2人分の価格</string>
+    <string name="b_restart">もう一回計算</string>
+    <string name="set_kekka1">%1$,3d円です</string>
+    <string name="set_hasuu_ari"></string>
+    <string name="set_hasuu_nasi"></string>
 </resources>
