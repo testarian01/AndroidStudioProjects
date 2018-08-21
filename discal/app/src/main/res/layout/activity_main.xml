@@ -4,8 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333333"
+    android:background="#444444"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tx_app"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tx_app"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:lineSpacingExtra="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tx_price"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:labelFor="@+id/et_price"
+        android:text="@string/tx_price"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/et_price"
@@ -13,16 +45,33 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
-        android:background="#ffffff"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/number_frame_style"
         android:ems="10"
+        android:hint="金額を入れてください"
         android:inputType="number"
-        android:padding="5dp"
-        android:textColor="#333333"
+        android:padding="12dp"
+        android:textColor="#444444"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tx_app" />
+
+    <TextView
+        android:id="@+id/tx_offprice"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:labelFor="@+id/et_offprice"
+        android:text="@string/tx_offprice"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_offprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/et_offprice"
@@ -31,11 +80,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
-        android:background="#ffffff"
+        android:background="@drawable/number_frame_style"
         android:ems="10"
         android:inputType="number"
-        android:padding="5dp"
-        android:textColor="#333333"
+        android:padding="12dp"
+        android:textSize="22sp"
+        android:textColor="#444444"
+        android:hint="割引率を入れてください"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,58 +94,20 @@
 
     <Button
         android:id="@+id/b_keisann"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
-        android:background="#ffffff"
+        android:background="@drawable/button_frame_style"
+        android:padding="18dp"
         android:text="@string/b_keisann"
-        android:textColor="#333333"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_offprice" />
-
-    <TextView
-        android:id="@+id/tx_app"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        android:lineSpacingExtra="14sp"
-        android:text="@string/tx_app"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#ffffff"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tx_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="80dp"
-        android:labelFor="@+id/et_price"
-        android:text="@string/tx_price"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/et_price"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/tx_offprice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="80dp"
-        android:labelFor="@+id/et_offprice"
-        android:text="@string/tx_offprice"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/et_offprice"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
