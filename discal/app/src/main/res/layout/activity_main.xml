@@ -82,25 +82,50 @@
 
     <TextView
         android:id="@+id/tx_offprice"
-        android:layout_width="360dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="175dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:labelFor="@+id/et_offprice"
         android:text="@string/tx_offprice"
         android:textColor="#ffffff"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/et_offprice"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tx_offprice2"
+        android:layout_width="175dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="184dp"
+        android:labelFor="@+id/et_offprice"
+        android:text="@string/tx_offprice2"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_offprice"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/et_offprice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_width="173dp"
+        android:layout_height="74dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/number_frame_style"
+        android:ems="10"
+        android:hint="@string/et_offprice"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="#444444"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_1" />
+
+    <EditText
+        android:id="@+id/et_offprice2"
+        android:layout_width="173dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/number_frame_style"
         android:ems="10"
         android:hint="@string/et_offprice"
@@ -109,7 +134,6 @@
         android:textColor="#444444"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_1" />
 
     <Button

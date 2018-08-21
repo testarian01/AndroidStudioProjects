@@ -3,9 +3,10 @@
     <string name="tx_app">DisCalは、値段と割引率を入力して、計算をタップするだけで簡単に割引計算ができます。</string>
     <string name="tx_price">商品金額(税込)</string>
     <string name="tx_offprice">％引</string>
+    <string name="tx_offprice2">割引</string>
     <string name="b_keisann_1">計算する</string>
     <string name="et_price_error">金額を入力してください</string>
-    <string name="et_offprice_error">オフ率を入力してください</string>
+    <string name="et_offprice_error">割引率を入力してください</string>
     <string name="set_kekka">%1$,3d円</string>
     <string name="tv_kekka_disp">結果</string>
     <string name="tv_kekka_zeikomi_disp">税込金額</string>
@@ -15,7 +16,7 @@
     <string name="tx_kekka_zeikomi_price">税込金額</string>
     <string name="et_price">金額を入れてください</string>
     <string name="et_offprice">割引率を入れてください</string>
+    <string name="et_offprice2">割引率を入れてください</string>
     <string name="button_0">％引</string>
     <string name="button_1">割引</string>
-
 </resources>
