@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:lineSpacingExtra="16sp"
         android:text="@string/tx_app"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -40,7 +40,7 @@
 
     <EditText
         android:id="@+id/et_price"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -56,76 +56,73 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tx_app" />
 
-    <Button
-        android:id="@+id/button_1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_1"
+        android:layout_marginTop="32dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_0" />
+        app:layout_constraintTop_toBottomOf="@+id/et_price">
 
-    <Button
-        android:id="@+id/button_0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_price" />
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_frame_style"
+            android:text="@string/button_2" />
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_frame_style"
+            android:text="@string/button_1" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tx_offprice"
-        android:layout_width="175dp"
-        android:layout_height="0dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:labelFor="@+id/et_offprice"
         android:text="@string/tx_offprice"
         android:textColor="#ffffff"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/et_offprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tx_offprice2"
-        android:layout_width="175dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="184dp"
-        android:labelFor="@+id/et_offprice"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:labelFor="@+id/et_offprice2"
         android:text="@string/tx_offprice2"
         android:textColor="#ffffff"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/et_offprice"
+        app:layout_constraintBottom_toTopOf="@+id/et_offprice2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/et_offprice"
-        android:layout_width="173dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/number_frame_style"
-        android:ems="10"
-        android:hint="@string/et_offprice"
-        android:inputType="number"
-        android:padding="12dp"
-        android:textColor="#444444"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_1" />
-
-    <EditText
-        android:id="@+id/et_offprice2"
-        android:layout_width="173dp"
-        android:layout_height="74dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/number_frame_style"
         android:ems="10"
         android:hint="@string/et_offprice"
@@ -134,7 +131,26 @@
         android:textColor="#444444"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_1" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <EditText
+        android:id="@+id/et_offprice2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/number_frame_style"
+        android:ems="10"
+        android:hint="@string/et_offprice2"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="#444444"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <Button
         android:id="@+id/b_keisann_1"
@@ -142,7 +158,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button_frame_style"
         android:padding="18dp"
         android:text="@string/b_keisann_1"
@@ -151,7 +167,24 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_offprice" />
+        app:layout_constraintTop_toBottomOf="@+id/et_offprice2" />
+
+    <Button
+        android:id="@+id/b_keisann_2"
+        android:layout_width="360dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_frame_style"
+        android:padding="18dp"
+        android:text="@string/b_keisann_2"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_offprice2" />
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
