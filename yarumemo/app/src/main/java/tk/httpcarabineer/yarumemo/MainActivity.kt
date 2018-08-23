@@ -47,14 +47,16 @@ class MainActivity : AppCompatActivity() {
                 // OKボタン押したときの処理
                 val userText = edit.getText().toString()
 
-                // 現在日時の取得
-                val now = Date(System.currentTimeMillis())
-                // 日時のフォーマットオブジェクト作成
-                val formatter = SimpleDateFormat("yyyy年MM月dd日 HH時mm分")
-                // フォーマット
-                val nowText = formatter.format(now)
+//                // 現在日時の取得
+//                val now = Date(System.currentTimeMillis())
+//                // 日時のフォーマットオブジェクト作成
+//                val formatter = SimpleDateFormat("yyyy年MM月dd日 HH時mm分")
+//                // フォーマット
+//                val nowText = formatter.format(now)
+//
+//                val ed_text = nowText + "\n" + userText
 
-                val ed_text = nowText + "\n" + userText
+                val ed_text = userText
 
                 //追加
                 //arrayAdapter.insert(nowText + /n + userText, arrayAdapter.count)
