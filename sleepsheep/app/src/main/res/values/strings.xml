@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">sleepsheep</string>
-    <string name="hello_world">hello world</string>
+    <string name="hello_world">テキスト</string>
+    <string name="textview">テキスト</string>
+    <string name="hello">hello</string>
+    <string name="test_text">test_text</string>
+    <string name="sleep_btn">眠れませんか？</string>
 </resources>
