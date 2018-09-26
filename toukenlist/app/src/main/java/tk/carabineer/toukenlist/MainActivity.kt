@@ -1,9 +1,12 @@
 package tk.carabineer.toukenlist
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.widget.TextView
+import android.widget.Toast
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
@@ -28,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         // 下の場合はjsonがColor型のオブジェクトにマッピングされる
         val toukenlist = mapper.readValue<Toukenlist>(json)
 
-
 //        println(color)
 //        println("名前：${name.kana}")
 //        println("RGBAコードのG値：${color.code.rgba[1]}")
@@ -47,9 +49,25 @@ class MainActivity : AppCompatActivity() {
         listView.adapter = arrayAdapter
 
 
+//            val intent = Intent(this, SecondActivity::class.java)
+//            startActivity(intent)
 
+
+        listView.setOnItemClickListener { _, view, _, _ ->
+
+            //インスタンス作成
+            val intent = Intent(this, SecondActivity::class.java)
+            //受け渡す変数
+            val text = toukenlist.list01.name + toukenlist.list01.nameyomi
+            //Inten変数をつなげる
+            intent.putExtra("TEXT_KEY",text)
+            //画面遷移を開始
+            startActivity(intent)
+
+//            val textView = view.findViewById<TextView>(android.R.id.text1)
+//            Toast.makeText(this, "Clicked: ${textView.text}", Toast.LENGTH_SHORT).show()
+
+        }
 
     }
-
-
 }
