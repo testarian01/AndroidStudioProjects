@@ -3,4 +3,6 @@
     <string name="textview">textview</string>
     <string name="zyoho">TEST!!!!!</string>
     <string name="message_view">message_view</string>
+    <string name="message_view2">TextView</string>
+    <string name="message_view3">TextView</string>
 </resources>
