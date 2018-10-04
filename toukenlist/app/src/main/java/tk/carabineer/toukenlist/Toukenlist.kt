@@ -18,6 +18,7 @@ data class Toukenlist(
 
 data class list01(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -25,6 +26,7 @@ data class list01(
 
 data class list02(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -32,6 +34,7 @@ data class list02(
 
 data class list03(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -39,6 +42,7 @@ data class list03(
 
 data class list04(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -46,6 +50,7 @@ data class list04(
 
 data class list05(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -53,6 +58,7 @@ data class list05(
 
 data class list06(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -60,6 +66,7 @@ data class list06(
 
 data class list07(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -67,6 +74,7 @@ data class list07(
 
 data class list08(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -74,6 +82,7 @@ data class list08(
 
 data class list09(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -81,6 +90,7 @@ data class list09(
 
 data class list10(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -88,6 +98,7 @@ data class list10(
 
 data class list11(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -95,6 +106,7 @@ data class list11(
 
 data class list12(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String
@@ -102,6 +114,7 @@ data class list12(
 
 data class list13(
         val bunrui:String,
+        val touha:String,
         val name:String,
         val nameyomi:String,
         val bikou:String

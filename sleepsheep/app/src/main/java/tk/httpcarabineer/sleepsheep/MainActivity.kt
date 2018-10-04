@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         textview.text = greeting
-
         textview2.text = "羊を数えてみましょう。"
 
         sleep_btn.setOnClickListener {

@@ -5,4 +5,14 @@
     <string name="message_view">message_view</string>
     <string name="message_view2">TextView</string>
     <string name="message_view3">TextView</string>
+    <string name="bunrui">TextView</string>
+    <string name="touha">TextView</string>
+    <string name="name">TextView</string>
+    <string name="nameyomi">TextView</string>
+    <string name="bikou">TextView</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="list_button">Button</string>
+    <string name="list_btn">テスト</string>
+    <string name="close_btn">Button</string>
+    <string name="back_btn">テスト</string>
 </resources>
