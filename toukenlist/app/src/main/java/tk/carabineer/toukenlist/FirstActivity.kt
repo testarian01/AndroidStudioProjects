@@ -54,6 +54,7 @@ class FirstActivity : AppCompatActivity() {
 
                 //画面遷移を開始
                 startActivity(intent)
+
             }else if(position==1) {
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -70,6 +71,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou",bikou)
 
                 startActivity(intent)
+
             }else if(position==2) {
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -86,6 +88,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou", bikou)
 
                 startActivity(intent)
+
             }else if(position==3){
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -102,6 +105,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou",bikou)
 
                 startActivity(intent)
+
             }else if(position==4){
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -118,6 +122,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou",bikou)
 
                 startActivity(intent)
+
             }else if(position==5){
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -134,6 +139,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou",bikou)
 
                 startActivity(intent)
+
             }else if(position==6){
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -150,6 +156,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou",bikou)
 
                 startActivity(intent)
+
             }else if(position==7){
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -166,6 +173,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou",bikou)
 
                 startActivity(intent)
+
             }else if(position==8){
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -182,6 +190,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou",bikou)
 
                 startActivity(intent)
+
             }else if(position==9) {
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -198,6 +207,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou", bikou)
 
                 startActivity(intent)
+
             }else if(position==10){
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -230,6 +240,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou",bikou)
 
                 startActivity(intent)
+
             }else if(position==12){
                 val intent = Intent(this, SecondActivity::class.java)
 
@@ -246,6 +257,7 @@ class FirstActivity : AppCompatActivity() {
                 intent.putExtra("bikou",bikou)
 
                 startActivity(intent)
+
             }
         }
 

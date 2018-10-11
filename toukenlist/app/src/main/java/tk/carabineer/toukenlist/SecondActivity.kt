@@ -12,6 +12,14 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
+        //戻るボタンの実装
+        var greeting = "リストに戻る"
+        returnButton.text = greeting
+
+        returnButton.setOnClickListener {
+            finish()
+        }
+
         val text1 = intent.getStringExtra("bunrui")
         val text2 = intent.getStringExtra("touha")
         val text3 = intent.getStringExtra("name")
@@ -29,15 +37,6 @@ class SecondActivity : AppCompatActivity() {
         messageView3.text = text3
         messageView4.text = text4
         messageView5.text = text5
-
-        //戻るボタンの実装
-//        var greeting = "刀剣リストに戻る"
-//        back_btn.text = "刀剣リストに戻る"
-
-        back_btn.setOnClickListener {
-            val intent = Intent(this, FirstActivity::class.java)
-            startActivity(intent)
-        }
 
     }
 }

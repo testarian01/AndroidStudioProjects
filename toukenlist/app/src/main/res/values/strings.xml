@@ -15,4 +15,5 @@
     <string name="list_btn">テスト</string>
     <string name="close_btn">Button</string>
     <string name="back_btn">テスト</string>
+    <string name="returnButton">Button</string>
 </resources>
