@@ -1,16 +1,27 @@
 package tk.carabineer.toukenlist
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_second.*
 
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
+
 class SecondActivity : AppCompatActivity() {
+
+    lateinit var mAdView : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
+
+        MobileAds.initialize(this, "ca-app-pub-5534482245506618~9002986464")
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         //戻るボタンの実装
         var greeting = "リストに戻る"
