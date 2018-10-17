@@ -30,7 +30,22 @@ data class Toukenlist(
         val list27: list27,
         val list28: list28,
         val list29: list29,
-        val list30: list30
+        val list30: list30,
+        val list31: list31,
+        val list32: list32,
+        val list33: list33,
+        val list34: list34,
+        val list35: list35,
+        val list36: list36,
+        val list37: list37,
+        val list38: list38,
+        val list39: list39,
+        val list40: list40,
+        val list41: list41,
+        val list42: list42,
+        val list43: list43,
+        val list44: list44,
+        val list45: list45
 )
 
 data class list01(
@@ -266,6 +281,126 @@ data class list29(
 )
 
 data class list30(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list31(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list32(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list33(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list34(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list35(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list36(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list37(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list38(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list39(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list40(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list41(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list42(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list43(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list44(
+        val bunrui:String,
+        val touha:String,
+        val name:String,
+        val nameyomi:String,
+        val bikou:String
+)
+
+data class list45(
         val bunrui:String,
         val touha:String,
         val name:String,
