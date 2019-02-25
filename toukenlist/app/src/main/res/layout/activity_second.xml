@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/back_btn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradation"
+    android:background="@color/common_google_signin_btn_text_dark_focused"
     tools:context=".SecondActivity">
+
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/back_btn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/message_view5"
@@ -86,13 +92,15 @@
         android:id="@+id/returnButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="@string/returnButton"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="96dp"
         android:background="@drawable/button_frame"
+        android:text="@string/returnButton"
         android:textColor="@android:color/white"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/message_view5" />
@@ -103,6 +111,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
         ads:adSize="SMART_BANNER"
         ads:adUnitId="ca-app-pub-5534482245506618/9166637992"
         ads:layout_constraintBottom_toBottomOf="parent"
@@ -110,3 +119,5 @@
         ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
 </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
